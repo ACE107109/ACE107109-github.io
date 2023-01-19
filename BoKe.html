@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- <script src="./content/blog.js"></script> -->
+    <script src="index.js"></script> 
+    <audio src="mp3/Serenity.mp3" id="dd" autoplay="autoplay"  loop="loop" preload="auto"></audio>
+    <script type="text/javascript">
+        function toggleSound() {
+                  var music = document.getElementById("dd");//获取ID
+                      console.log(music);
+                      console.log(music.paused);
+                  if (music.paused) { //判读是否播放
+                      music.paused=false;
+                      music.play(); //没有就播放
+                  }
+              }
+      setInterval("toggleSound()",1);
+      </script>
+</head>
+<body>
+    <header>
+     <div class="logo-nav">
+        <p>Logo</p>
+        <nav>
+           <a class="active">首页</a>
+           <a>文章</a>
+           <a>关于</a>
+           <a>联系</a>
+        </nav>
+     </div>
+     <div class="header-title">
+        <h1>欢迎</h1>
+        <p>我的个人博客</p>
+        <div></div>
+     </div>
+    </header>
+    <main>
+        <section class="home-blog">
+            <div class="home-blog-title">
+                <p>最新博客</p>
+                <div></div>
+            </div>
+            <div class="home-blog-content">
+               <div class="home-blog-card">
+                    <a href="https://codemart.com/" target="_blank"><img class="home-blog-img" src="images/壁纸.jpg"/></a>
+                    <div class="home-blog-card-title" >
+                        <div></div>
+                        <p>码市</p>
+                    </div>
+               </div>
+               <div class="home-blog-card">
+                 <a href="https://www.runoob.com/" target="_blank"><img class="home-blog-img" src="images/壁纸.jpg"/></a>
+                <div class="home-blog-card-title" >
+                    <div></div>
+                    <p>菜鸟教程</p>
+                </div>
+               </div>
+               <div class="home-blog-card">
+                <a href="http://rsapp.nsmc.org.cn/geofy/?i=0&isPlay=true&speed=5&sat=fy-4a&pro=geos&type=reg_china&band=1&overlay=&x=250000&y=3300000&z=2&area=1&ll=0&county=1&duration=30&interval=1&c=false&cp=0.5&st=&et=&ac=&hide=1&s=1" target="_blank"><img class="home-blog-img" src="images/壁纸.jpg"/></a>
+                <div class="home-blog-card-title" >
+                    <div></div>
+                    <p>风云四号卫星天气应用平台</p>
+                </div>
+               </div>
+            </div>
+        </section>
+        <section class="home-about">
+            <img src="./images/about.jpg"/>
+            <div class="home-about-content"> 
+              <div>
+                <p>我的简介</p>
+                <div></div>
+              </div>
+              <p>关于我关于我关于我关于我关于我关于我关于我关于我关于我关于我关于我关于我关于我关于我</p>
+            </div>
+           
+        </section>
+        <section class="home-contact">
+            <p class="home-contact-title">联系方式</p>
+            <p class="home-contact-sentence">如果你有任何问题，留下你的邮箱，我会尽快联系你的</p>
+            <form>
+                <input id="home-contact-email" type="text" placeholder="youremail@email.com">
+                <button id="home-contact-submit">提交</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://im.qq.com/index" target="_blank">
+                <div class="qq-logo">
+                  <img src="./images/QQ.png"/>
+                  <p>QQ</p>
+                </div>  
+             </a>
+             <a href="https://weixin.qq.com/" target="_blank">
+                <div class="weixin-logo">
+                    <img src="./images/微信.png"/>
+                    <P>Wechat</P>
+                </div>
+             </a>
+            <a href="https://twitter.com/home" target="_blank">
+              <div class="twitter-logo">
+                <img src="./images/推特1.png"/>
+                <p>Twitter</p>
+              </div>
+            </a>
+        </div>
+        <p>&copy Mr.Wang 2022</p>
+    </footer>
+</body>
+</html>

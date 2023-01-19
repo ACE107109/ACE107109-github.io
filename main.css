@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-image: url("images/header-image.jpg");
+    background-size: cover;
+    height: 520px;
+    filter: grayscale(0.3);
+    background-position: center;
+    padding: 0 1rem;
+}
+.logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color:rgb(60, 106, 60);
+    font-weight: bold;
+}
+nav a{
+ padding: 5px 0.7rem;
+ cursor: pointer;
+ 
+}
+nav a:hover{
+    font-weight: 700;
+}
+/* a被选中 */
+nav a.active{
+  padding: calc(5px - 1px) calc(0.7rem - 1px);
+  border: 1px solid rgb(79, 136, 80);
+  border-radius: 5%;
+  font-weight: 700;
+  
+}
+.header-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 53px);
+    color: rgb(255, 255, 255); 
+}
+.header-title h1{
+   font-size: 50px;
+}
+.header-title p{
+    font-size: 15px;
+   margin: 0.5rem 0;
+}
+.header-title div{
+    width: 40px;
+    height: 3px;
+    background-color: rgb(79, 136, 80);
+    margin-top: 10px;
+}
+
+/* 中间部分 */
+.home-blog{
+    background-color: #f2f9ef;
+    padding: 100px 0;
+}
+.home-blog-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    font-size: 1rem;
+    color: rgb(79, 136, 80);
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+.home-blog-title div{
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: rgb(79, 136, 80);
+}
+.home-blog-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    margin: 0 auto;
+    width: 90%;
+}
+.home-blog-img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.home-blog-card{
+    box-shadow: 0px 0px 21px rgb(208, 208, 208);
+    background-color: #ffffff;
+}
+.home-blog-card:hover{
+    box-shadow: 0px 0px 45px rgb(192, 192, 192);
+    cursor: pointer;
+}
+.home-blog-card-title{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+.home-blog-card-title div{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(79, 136, 80);
+    margin-bottom: 10px;
+}
+
+/* 关于 */
+.home-about{
+   display: flex;
+   height: 500px;
+}
+.home-about img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-about-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* >p表示直接属于父盒子的p标签 */
+.home-about-content > p{
+   width: 60%;
+   line-height: 2rem;
+   letter-spacing: 1px;
+}
+.home-about-content div p{
+    
+    font-size: 1rem;
+    color: rgb(79, 136, 80);
+    letter-spacing: 3px;
+    margin-bottom: 7px;
+}
+.home-about-content div div{
+    background-color: rgb(79, 136, 80);
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.home-contact{
+    height: 360px;
+    background-color: #dbe3d9;
+    /* 剧中显示 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home-contact-title{
+    font-size: 1rem;
+    color: rgb(79, 136, 80);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.home-contact-sentence{
+    color: rgb(79, 136, 80);
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#home-contact-email{
+   width: 450px;
+   padding: 4px 7px;
+   font-size: 16px;
+   border: 0;
+   background-color: #f2f9ef;
+   outline: none;
+   transition: background-color 0.3s linear;
+}
+#home-contact-email:focus{
+    background-color: #ffffff;
+}
+#home-contact-email::placeholder{
+    /* 透明度 */
+    opacity: 0.5;
+}
+#home-contact-submit{
+    width: 110px;
+    padding: 8px;
+    color: rgb(79, 136, 80);
+    border: 1px solid rgb(79, 136, 80);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#home-contact-submit:hover{
+    background-color: rgb(79, 136, 80);
+    color: #f2f9ef;
+    transition: background-color 0.3s ease-out;
+}
+
+footer{
+    height: 100px;
+    display: flex; /*左右排列*/
+    justify-content: space-between;/* 左右分开*/
+    align-items: center;  /* 居中*/
+    padding: 0 35px;
+    color: rgb(110, 110, 110);
+}
+footer div{
+    position: relative;
+}
+footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.fa-qq{
+    color: rgb(110, 110, 110);
+}
+.fa-weixin{
+    color: rgb(110, 110, 110);
+}
+.fa-twitter{
+    color: rgb(110, 110, 110);
+}
+.qq-logo img{
+    width: 30px;
+ }
+ .qq-logo p{
+     position: absolute;
+     bottom: 35px;
+     display: none;/*默认不显示*/
+ }
+ footer .qq-logo:hover p{
+     display: block;
+     z-index: 2;
+ } 
+.weixin-logo img{
+   width: 30px;
+}
+.weixin-logo p{
+    position: absolute;
+    bottom: 35px;
+    display: none;/*默认不显示*/
+}
+footer .weixin-logo:hover p{
+    display: block;
+    z-index: 2;
+} 
+
+.twitter-logo img{
+    width: 30px;
+ }
+.twitter-logo p{
+     position: absolute;
+     bottom: 35px;
+     display: none;/*默认不显示*/
+ }
+ footer .twitter-logo:hover p{
+     display: block;
+     z-index: 2;
+ } 
+
+ @media(orientation:portrait){
+    #home-contact-email{
+        width: 80vw;
+    }
+    .home-blog-content{
+        grid-template-columns:1fr;
+        grid-row-gap:30px;
+    }
+    .home-about{
+        display: block;
+    }
+    .home-about img{
+        width: 100%;
+        height: 50%;
+    }
+    .home-about-content{
+        width: 100%;
+        height: 50%;
+    }
+    .home-about-content > p{
+        width:85%;
+    }
+    .home-contact-sentence{
+        width: 82vw;
+        text-align: center;
+    }
+    .home-blog-card{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
